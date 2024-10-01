@@ -4,7 +4,6 @@ class RomanNumeral(val s: String) {
 
     fun toInt(): Int {
 
-
         if (s == "IV") {
             return 4
         }
@@ -13,12 +12,12 @@ class RomanNumeral(val s: String) {
             return 5
         }
 
-        if (s == "VI") {
-            return 6
+        if (s == "IX") {
+            return 9
         }
 
-        if (s == "VII") {
-            return 7
+        if (s.contains('V')) {
+            return 5 + s.count { it.equals('I')}
         }
 
         return s.count()

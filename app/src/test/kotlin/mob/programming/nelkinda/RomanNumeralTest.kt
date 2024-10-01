@@ -8,7 +8,6 @@ import io.kotest.data.row
 import io.kotest.datatest.withData
 import io.kotest.matchers.shouldBe
 
-
 class RomanNumeralTest: FunSpec() {
 
     init {
@@ -37,6 +36,10 @@ class RomanNumeralTest: FunSpec() {
             ) { (numeral, expectedValue) ->
                 RomanNumeral(numeral).toInt() shouldBe expectedValue
             }
+        }
+
+        test("Roman numeral 'IX' equals 9 ") {
+            RomanNumeral("IX").toInt() shouldBe 9
         }
 
     }

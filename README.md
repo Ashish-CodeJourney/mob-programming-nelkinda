@@ -63,6 +63,6 @@ LXXX = 50 + 10 + 10 +10
 MMD = 1000 + 1000 + 500
 
 
-I, (II, III)
-V (IV, V, VI, VII, VIII)
-IX
+I, (II, III) PASSED
+V (IV, V, VI, VII, VIII) PASSED
+IX ?
