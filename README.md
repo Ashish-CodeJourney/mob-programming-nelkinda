@@ -5,7 +5,7 @@ A Kotlin implementation of the Roman Numerals' Kata that follows a TDD approach.
 ## Kata Description
 
  - Given a decimal number, convert it in a roman numeral string
- - Given a roman decimal string, convert it in a decimal number
+ - Given a roman numeral string, convert it in a decimal number
 
 For the sake of the exercise numbers above 3 000 won't be handled.
 
