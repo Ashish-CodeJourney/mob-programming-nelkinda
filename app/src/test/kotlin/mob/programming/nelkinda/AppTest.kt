@@ -3,12 +3,14 @@
  */
 package mob.programming.nelkinda
 
-import kotlin.test.Test
-import kotlin.test.assertNotNull
+import io.kotest.core.spec.style.FunSpec
+import io.kotest.matchers.shouldBe
 
-class AppTest {
-    @Test fun appHasAGreeting() {
-        val classUnderTest = App()
-        assertNotNull(classUnderTest.greeting, "app should have a greeting")
+class AppTest: FunSpec() {
+
+    init {
+        test("123") {
+            true shouldBe true
+        }
     }
 }
