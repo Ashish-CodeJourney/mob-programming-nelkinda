@@ -4,21 +4,27 @@
 package mob.programming.nelkinda
 
 import io.kotest.core.spec.style.FunSpec
+import io.kotest.data.row
+import io.kotest.datatest.withData
 import io.kotest.matchers.shouldBe
+
 
 class RomanNumeralTest: FunSpec() {
 
     init {
-        test("Roman numeral 'I' equals 1") {
-            RomanNumeral("I").toInt() shouldBe 1
-        }
 
-        test("Roman numeral 'II' equals 2") {
-            RomanNumeral("II").toInt() shouldBe 2
+        context("Roman numerals") {
+            withData(
+                row("I", 1),
+                row("II", 2),
+            ) { (numeral, expectedValue) ->
+                RomanNumeral(numeral).toInt() shouldBe expectedValue
+            }
         }
 
         test("Roman numeral 'IV' equals 4"){
             RomanNumeral("IV").toInt() shouldBe 4
         }
+
     }
 }
