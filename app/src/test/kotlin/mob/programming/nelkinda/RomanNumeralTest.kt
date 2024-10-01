@@ -6,11 +6,11 @@ package mob.programming.nelkinda
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
 
-class AppTest: FunSpec() {
+class RomanNumeralTest: FunSpec() {
 
     init {
-        test("123") {
-            true shouldBe true
+        test("Roman numeral 'I' equals 1") {
+            RomanNumeral("I").toInt() shouldBe 1
         }
     }
 }
