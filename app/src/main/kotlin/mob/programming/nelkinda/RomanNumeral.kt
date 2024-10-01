@@ -16,6 +16,10 @@ class RomanNumeral(val s: String) {
             return 9
         }
 
+        if (s == "X") {
+            return 10
+        }
+
         if (s.contains('V')) {
             return 5 + s.count { it.equals('I')}
         }

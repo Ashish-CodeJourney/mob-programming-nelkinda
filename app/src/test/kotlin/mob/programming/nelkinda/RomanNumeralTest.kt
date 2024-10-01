@@ -38,8 +38,12 @@ class RomanNumeralTest: FunSpec() {
             }
         }
 
-        test("Roman numeral 'IX' equals 9 ") {
+        test("Roman numeral 'IX' equals 9") {
             RomanNumeral("IX").toInt() shouldBe 9
+        }
+
+        test("Roman numeral 'X' equals 10") {
+            RomanNumeral("X").toInt() shouldBe 10
         }
 
     }
