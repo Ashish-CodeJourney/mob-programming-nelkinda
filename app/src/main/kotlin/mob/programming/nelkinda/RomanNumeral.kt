@@ -3,28 +3,23 @@ package mob.programming.nelkinda
 class RomanNumeral(val s: String) {
 
     fun toInt(): Int {
-
-        if (s == "IV") {
-            return 4
+        if(s.contains('V')) {
+            return numeralContaining('V', 5)
+        } else if (s.contains('X')) {
+            return numeralContaining('X', 10)
+        } else {
+            return s.count()
         }
+    }
 
-        if (s == "V") {
-            return 5
+    private fun numeralContaining(numeral: Char, value: Int): Int {
+        if (s == "I" + numeral) {
+            return value - 1
+        } else if (s == numeral.toString()) {
+            return value
+        } else {
+            return value + s.count { it.equals('I') }
         }
-
-        if (s == "IX") {
-            return 9
-        }
-
-        if (s == "X") {
-            return 10
-        }
-
-        if (s.contains('V')) {
-            return 5 + s.count { it.equals('I')}
-        }
-
-        return s.count()
     }
 
 }
