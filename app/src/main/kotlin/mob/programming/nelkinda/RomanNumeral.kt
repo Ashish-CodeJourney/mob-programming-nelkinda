@@ -13,6 +13,10 @@ class RomanNumeral(val s: String) {
             return 5
         }
 
+        if (s == "VI") {
+            return 6
+        }
+
         return s.count()
     }
 

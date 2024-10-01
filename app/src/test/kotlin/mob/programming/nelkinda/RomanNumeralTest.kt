@@ -30,5 +30,9 @@ class RomanNumeralTest: FunSpec() {
             RomanNumeral("V").toInt() shouldBe 5
         }
 
+        test("Roman numeral 'VI' equals 6") {
+            RomanNumeral("VI").toInt() shouldBe 6
+        }
+
     }
 }
