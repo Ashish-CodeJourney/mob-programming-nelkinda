@@ -9,6 +9,8 @@ A Kotlin implementation of the Roman Numerals' Kata that follows a TDD approach.
 
 For the sake of the exercise numbers above 3 000 won't be handled.
 
+for 1, 2, 3 we can make a parameterized test
+
 Here are some useful conversions
 ```
 I  = 1

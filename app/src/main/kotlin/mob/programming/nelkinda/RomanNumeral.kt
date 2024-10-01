@@ -1,8 +1,14 @@
 package mob.programming.nelkinda
 
-class RomanNumeral(s: String) {
+class RomanNumeral(val s: String) {
     fun toInt(): Int {
-        return 1
+        if (s == "I") {
+            return 1
+        } else if (s == "II") {
+            return 2
+        } else {
+            return 3
+        }
     }
 
 }
