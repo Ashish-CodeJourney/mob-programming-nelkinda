@@ -53,3 +53,16 @@ Output: 4
 Input: "MMDLXXXIII"
 Output: 2583
 ```
+
+# Notes
+Input: "MMDLXXXIII"
+Output: 2583
+
+III = 3
+LXXX = 50 + 10 + 10 +10
+MMD = 1000 + 1000 + 500
+
+
+I, (II, III)
+V (IV, V, VI, VII, VIII)
+IX
