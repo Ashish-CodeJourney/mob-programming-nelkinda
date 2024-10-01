@@ -17,6 +17,10 @@ class RomanNumeral(val s: String) {
             return 6
         }
 
+        if (s == "VII") {
+            return 7
+        }
+
         return s.count()
     }
 

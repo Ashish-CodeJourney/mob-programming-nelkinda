@@ -30,8 +30,13 @@ class RomanNumeralTest: FunSpec() {
             RomanNumeral("V").toInt() shouldBe 5
         }
 
-        test("Roman numeral 'VI' equals 6") {
-            RomanNumeral("VI").toInt() shouldBe 6
+        context("Roman numerals") {
+            withData(
+                row("VI", 6),
+                row("VII", 7),
+            ) { (numeral, expectedValue) ->
+                RomanNumeral(numeral).toInt() shouldBe expectedValue
+            }
         }
 
     }
